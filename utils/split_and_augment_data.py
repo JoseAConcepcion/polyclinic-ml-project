@@ -1,5 +1,10 @@
 import os
 import pandas as pd
+import sys
+project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+src_path = os.path.join(project_root, 'src')
+sys.path.append(src_path)
+
 from src.Data_Augmentation.random_forest import random_forest_augmentation
 
 total_incomes_file = os.path.join(os.getcwd(), 'data/Anexos_7/total_incomes.csv')
