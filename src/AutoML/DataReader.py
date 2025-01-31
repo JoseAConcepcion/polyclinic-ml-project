@@ -19,7 +19,7 @@ provinces_df=[]
 for column in [column for column in df.columns if column!='Date']:
     
     scaler = MinMaxScaler()
-    df[column] = scaler.fit_transform(df[[column]])
+    # df[column] = scaler.fit_transform(df[[column]])
 
     def create_sequences(data, timesteps):
         X, y = [], []
