@@ -1,0 +1,423 @@
+2025-02-21 13:59:16,049 - INFO - Ejecutando la RNN - Iteración 1
+2025-02-21 13:59:16,052 - INFO - Cantidad de datos a entrenar: torch.Size([427, 10, 1])
+2025-02-21 13:59:16,053 - INFO - Cantidad de datos a testear: torch.Size([183, 10, 1])
+2025-02-21 13:59:16,615 - INFO - Época 20/200, Pérdida: 0.0158
+2025-02-21 13:59:16,641 - INFO - Época 40/200, Pérdida: 0.0051
+2025-02-21 13:59:16,666 - INFO - Época 60/200, Pérdida: 0.0043
+2025-02-21 13:59:16,693 - INFO - Época 80/200, Pérdida: 0.0040
+2025-02-21 13:59:16,720 - INFO - Época 100/200, Pérdida: 0.0038
+2025-02-21 13:59:16,748 - INFO - Época 120/200, Pérdida: 0.0037
+2025-02-21 13:59:16,774 - INFO - Época 140/200, Pérdida: 0.0036
+2025-02-21 13:59:16,801 - INFO - Época 160/200, Pérdida: 0.0036
+2025-02-21 13:59:16,827 - INFO - Época 180/200, Pérdida: 0.0036
+2025-02-21 13:59:16,857 - INFO - Época 200/200, Pérdida: 0.0036
+2025-02-21 13:59:16,857 - INFO - Pérdida en el conjunto de prueba: 0.0061
+2025-02-21 13:59:16,858 - INFO - Ejecutando la RNN - Iteración 2
+2025-02-21 13:59:16,861 - INFO - Cantidad de datos a entrenar: torch.Size([427, 10, 1])
+2025-02-21 13:59:16,861 - INFO - Cantidad de datos a testear: torch.Size([183, 10, 1])
+2025-02-21 13:59:16,888 - INFO - Época 20/200, Pérdida: 0.0158
+2025-02-21 13:59:16,914 - INFO - Época 40/200, Pérdida: 0.0054
+2025-02-21 13:59:16,940 - INFO - Época 60/200, Pérdida: 0.0041
+2025-02-21 13:59:16,966 - INFO - Época 80/200, Pérdida: 0.0039
+2025-02-21 13:59:16,993 - INFO - Época 100/200, Pérdida: 0.0038
+2025-02-21 13:59:17,019 - INFO - Época 120/200, Pérdida: 0.0037
+2025-02-21 13:59:17,045 - INFO - Época 140/200, Pérdida: 0.0037
+2025-02-21 13:59:17,071 - INFO - Época 160/200, Pérdida: 0.0037
+2025-02-21 13:59:17,097 - INFO - Época 180/200, Pérdida: 0.0036
+2025-02-21 13:59:17,123 - INFO - Época 200/200, Pérdida: 0.0036
+2025-02-21 13:59:17,123 - INFO - Pérdida en el conjunto de prueba: 0.0062
+2025-02-21 13:59:17,124 - INFO - Ejecutando la RNN - Iteración 3
+2025-02-21 13:59:17,127 - INFO - Cantidad de datos a entrenar: torch.Size([427, 10, 1])
+2025-02-21 13:59:17,127 - INFO - Cantidad de datos a testear: torch.Size([183, 10, 1])
+2025-02-21 13:59:17,153 - INFO - Época 20/200, Pérdida: 0.0104
+2025-02-21 13:59:17,179 - INFO - Época 40/200, Pérdida: 0.0050
+2025-02-21 13:59:17,208 - INFO - Época 60/200, Pérdida: 0.0043
+2025-02-21 13:59:17,234 - INFO - Época 80/200, Pérdida: 0.0040
+2025-02-21 13:59:17,260 - INFO - Época 100/200, Pérdida: 0.0039
+2025-02-21 13:59:17,286 - INFO - Época 120/200, Pérdida: 0.0038
+2025-02-21 13:59:17,312 - INFO - Época 140/200, Pérdida: 0.0037
+2025-02-21 13:59:17,339 - INFO - Época 160/200, Pérdida: 0.0037
+2025-02-21 13:59:17,367 - INFO - Época 180/200, Pérdida: 0.0037
+2025-02-21 13:59:17,393 - INFO - Época 200/200, Pérdida: 0.0037
+2025-02-21 13:59:17,393 - INFO - Pérdida en el conjunto de prueba: 0.0062
+2025-02-21 13:59:17,394 - INFO - Ejecutando la RNN - Iteración 4
+2025-02-21 13:59:17,396 - INFO - Cantidad de datos a entrenar: torch.Size([427, 10, 1])
+2025-02-21 13:59:17,396 - INFO - Cantidad de datos a testear: torch.Size([183, 10, 1])
+2025-02-21 13:59:17,423 - INFO - Época 20/200, Pérdida: 0.0306
+2025-02-21 13:59:17,450 - INFO - Época 40/200, Pérdida: 0.0184
+2025-02-21 13:59:17,476 - INFO - Época 60/200, Pérdida: 0.0055
+2025-02-21 13:59:17,502 - INFO - Época 80/200, Pérdida: 0.0045
+2025-02-21 13:59:17,528 - INFO - Época 100/200, Pérdida: 0.0041
+2025-02-21 13:59:17,554 - INFO - Época 120/200, Pérdida: 0.0039
+2025-02-21 13:59:17,580 - INFO - Época 140/200, Pérdida: 0.0038
+2025-02-21 13:59:17,607 - INFO - Época 160/200, Pérdida: 0.0037
+2025-02-21 13:59:17,633 - INFO - Época 180/200, Pérdida: 0.0036
+2025-02-21 13:59:17,659 - INFO - Época 200/200, Pérdida: 0.0036
+2025-02-21 13:59:17,660 - INFO - Pérdida en el conjunto de prueba: 0.0061
+2025-02-21 13:59:17,660 - INFO - Ejecutando la RNN - Iteración 5
+2025-02-21 13:59:17,663 - INFO - Cantidad de datos a entrenar: torch.Size([427, 10, 1])
+2025-02-21 13:59:17,663 - INFO - Cantidad de datos a testear: torch.Size([183, 10, 1])
+2025-02-21 13:59:17,690 - INFO - Época 20/200, Pérdida: 0.0058
+2025-02-21 13:59:17,718 - INFO - Época 40/200, Pérdida: 0.0044
+2025-02-21 13:59:17,744 - INFO - Época 60/200, Pérdida: 0.0038
+2025-02-21 13:59:17,771 - INFO - Época 80/200, Pérdida: 0.0036
+2025-02-21 13:59:17,797 - INFO - Época 100/200, Pérdida: 0.0036
+2025-02-21 13:59:17,823 - INFO - Época 120/200, Pérdida: 0.0035
+2025-02-21 13:59:17,850 - INFO - Época 140/200, Pérdida: 0.0035
+2025-02-21 13:59:17,878 - INFO - Época 160/200, Pérdida: 0.0035
+2025-02-21 13:59:17,905 - INFO - Época 180/200, Pérdida: 0.0034
+2025-02-21 13:59:17,931 - INFO - Época 200/200, Pérdida: 0.0034
+2025-02-21 13:59:17,932 - INFO - Pérdida en el conjunto de prueba: 0.0063
+2025-02-21 13:59:17,932 - INFO - Ejecutando la RNN - Iteración 6
+2025-02-21 13:59:17,935 - INFO - Cantidad de datos a entrenar: torch.Size([427, 10, 1])
+2025-02-21 13:59:17,935 - INFO - Cantidad de datos a testear: torch.Size([183, 10, 1])
+2025-02-21 13:59:17,962 - INFO - Época 20/200, Pérdida: 0.0175
+2025-02-21 13:59:17,988 - INFO - Época 40/200, Pérdida: 0.0049
+2025-02-21 13:59:18,015 - INFO - Época 60/200, Pérdida: 0.0041
+2025-02-21 13:59:18,041 - INFO - Época 80/200, Pérdida: 0.0039
+2025-02-21 13:59:18,067 - INFO - Época 100/200, Pérdida: 0.0038
+2025-02-21 13:59:18,093 - INFO - Época 120/200, Pérdida: 0.0038
+2025-02-21 13:59:18,119 - INFO - Época 140/200, Pérdida: 0.0037
+2025-02-21 13:59:18,146 - INFO - Época 160/200, Pérdida: 0.0037
+2025-02-21 13:59:18,173 - INFO - Época 180/200, Pérdida: 0.0037
+2025-02-21 13:59:18,200 - INFO - Época 200/200, Pérdida: 0.0036
+2025-02-21 13:59:18,201 - INFO - Pérdida en el conjunto de prueba: 0.0061
+2025-02-21 13:59:18,201 - INFO - Ejecutando la RNN - Iteración 7
+2025-02-21 13:59:18,204 - INFO - Cantidad de datos a entrenar: torch.Size([427, 10, 1])
+2025-02-21 13:59:18,204 - INFO - Cantidad de datos a testear: torch.Size([183, 10, 1])
+2025-02-21 13:59:18,236 - INFO - Época 20/200, Pérdida: 0.0126
+2025-02-21 13:59:18,280 - INFO - Época 40/200, Pérdida: 0.0046
+2025-02-21 13:59:18,334 - INFO - Época 60/200, Pérdida: 0.0039
+2025-02-21 13:59:18,406 - INFO - Época 80/200, Pérdida: 0.0037
+2025-02-21 13:59:18,486 - INFO - Época 100/200, Pérdida: 0.0037
+2025-02-21 13:59:18,517 - INFO - Época 120/200, Pérdida: 0.0036
+2025-02-21 13:59:18,549 - INFO - Época 140/200, Pérdida: 0.0036
+2025-02-21 13:59:18,580 - INFO - Época 160/200, Pérdida: 0.0036
+2025-02-21 13:59:18,610 - INFO - Época 180/200, Pérdida: 0.0036
+2025-02-21 13:59:18,640 - INFO - Época 200/200, Pérdida: 0.0035
+2025-02-21 13:59:18,640 - INFO - Pérdida en el conjunto de prueba: 0.0063
+2025-02-21 13:59:18,641 - INFO - Ejecutando la RNN - Iteración 8
+2025-02-21 13:59:18,644 - INFO - Cantidad de datos a entrenar: torch.Size([427, 10, 1])
+2025-02-21 13:59:18,644 - INFO - Cantidad de datos a testear: torch.Size([183, 10, 1])
+2025-02-21 13:59:18,677 - INFO - Época 20/200, Pérdida: 0.0077
+2025-02-21 13:59:18,710 - INFO - Época 40/200, Pérdida: 0.0046
+2025-02-21 13:59:18,743 - INFO - Época 60/200, Pérdida: 0.0040
+2025-02-21 13:59:18,776 - INFO - Época 80/200, Pérdida: 0.0038
+2025-02-21 13:59:18,810 - INFO - Época 100/200, Pérdida: 0.0037
+2025-02-21 13:59:18,841 - INFO - Época 120/200, Pérdida: 0.0036
+2025-02-21 13:59:18,873 - INFO - Época 140/200, Pérdida: 0.0036
+2025-02-21 13:59:18,903 - INFO - Época 160/200, Pérdida: 0.0035
+2025-02-21 13:59:18,933 - INFO - Época 180/200, Pérdida: 0.0035
+2025-02-21 13:59:18,963 - INFO - Época 200/200, Pérdida: 0.0035
+2025-02-21 13:59:18,963 - INFO - Pérdida en el conjunto de prueba: 0.0065
+2025-02-21 13:59:18,964 - INFO - Ejecutando la RNN - Iteración 9
+2025-02-21 13:59:18,966 - INFO - Cantidad de datos a entrenar: torch.Size([427, 10, 1])
+2025-02-21 13:59:18,966 - INFO - Cantidad de datos a testear: torch.Size([183, 10, 1])
+2025-02-21 13:59:18,997 - INFO - Época 20/200, Pérdida: 0.0186
+2025-02-21 13:59:19,027 - INFO - Época 40/200, Pérdida: 0.0099
+2025-02-21 13:59:19,060 - INFO - Época 60/200, Pérdida: 0.0044
+2025-02-21 13:59:19,088 - INFO - Época 80/200, Pérdida: 0.0041
+2025-02-21 13:59:19,115 - INFO - Época 100/200, Pérdida: 0.0040
+2025-02-21 13:59:19,141 - INFO - Época 120/200, Pérdida: 0.0039
+2025-02-21 13:59:19,168 - INFO - Época 140/200, Pérdida: 0.0038
+2025-02-21 13:59:19,194 - INFO - Época 160/200, Pérdida: 0.0037
+2025-02-21 13:59:19,220 - INFO - Época 180/200, Pérdida: 0.0037
+2025-02-21 13:59:19,247 - INFO - Época 200/200, Pérdida: 0.0036
+2025-02-21 13:59:19,247 - INFO - Pérdida en el conjunto de prueba: 0.0062
+2025-02-21 13:59:19,248 - INFO - Ejecutando la RNN - Iteración 10
+2025-02-21 13:59:19,250 - INFO - Cantidad de datos a entrenar: torch.Size([427, 10, 1])
+2025-02-21 13:59:19,251 - INFO - Cantidad de datos a testear: torch.Size([183, 10, 1])
+2025-02-21 13:59:19,278 - INFO - Época 20/200, Pérdida: 0.0235
+2025-02-21 13:59:19,305 - INFO - Época 40/200, Pérdida: 0.0119
+2025-02-21 13:59:19,331 - INFO - Época 60/200, Pérdida: 0.0048
+2025-02-21 13:59:19,358 - INFO - Época 80/200, Pérdida: 0.0038
+2025-02-21 13:59:19,385 - INFO - Época 100/200, Pérdida: 0.0036
+2025-02-21 13:59:19,411 - INFO - Época 120/200, Pérdida: 0.0036
+2025-02-21 13:59:19,437 - INFO - Época 140/200, Pérdida: 0.0036
+2025-02-21 13:59:19,463 - INFO - Época 160/200, Pérdida: 0.0035
+2025-02-21 13:59:19,489 - INFO - Época 180/200, Pérdida: 0.0035
+2025-02-21 13:59:19,515 - INFO - Época 200/200, Pérdida: 0.0035
+2025-02-21 13:59:19,516 - INFO - Pérdida en el conjunto de prueba: 0.0066
+2025-02-21 13:59:19,516 - INFO - Ejecutando la RNN - Iteración 11
+2025-02-21 13:59:19,519 - INFO - Cantidad de datos a entrenar: torch.Size([427, 10, 1])
+2025-02-21 13:59:19,519 - INFO - Cantidad de datos a testear: torch.Size([183, 10, 1])
+2025-02-21 13:59:19,549 - INFO - Época 20/200, Pérdida: 0.0152
+2025-02-21 13:59:19,575 - INFO - Época 40/200, Pérdida: 0.0049
+2025-02-21 13:59:19,602 - INFO - Época 60/200, Pérdida: 0.0041
+2025-02-21 13:59:19,629 - INFO - Época 80/200, Pérdida: 0.0039
+2025-02-21 13:59:19,655 - INFO - Época 100/200, Pérdida: 0.0037
+2025-02-21 13:59:19,681 - INFO - Época 120/200, Pérdida: 0.0037
+2025-02-21 13:59:19,708 - INFO - Época 140/200, Pérdida: 0.0036
+2025-02-21 13:59:19,734 - INFO - Época 160/200, Pérdida: 0.0036
+2025-02-21 13:59:19,760 - INFO - Época 180/200, Pérdida: 0.0036
+2025-02-21 13:59:19,787 - INFO - Época 200/200, Pérdida: 0.0036
+2025-02-21 13:59:19,787 - INFO - Pérdida en el conjunto de prueba: 0.0061
+2025-02-21 13:59:19,787 - INFO - Ejecutando la RNN - Iteración 12
+2025-02-21 13:59:19,790 - INFO - Cantidad de datos a entrenar: torch.Size([427, 10, 1])
+2025-02-21 13:59:19,790 - INFO - Cantidad de datos a testear: torch.Size([183, 10, 1])
+2025-02-21 13:59:19,817 - INFO - Época 20/200, Pérdida: 0.0053
+2025-02-21 13:59:19,844 - INFO - Época 40/200, Pérdida: 0.0038
+2025-02-21 13:59:19,873 - INFO - Época 60/200, Pérdida: 0.0036
+2025-02-21 13:59:19,899 - INFO - Época 80/200, Pérdida: 0.0036
+2025-02-21 13:59:19,926 - INFO - Época 100/200, Pérdida: 0.0035
+2025-02-21 13:59:19,952 - INFO - Época 120/200, Pérdida: 0.0035
+2025-02-21 13:59:19,982 - INFO - Época 140/200, Pérdida: 0.0034
+2025-02-21 13:59:20,008 - INFO - Época 160/200, Pérdida: 0.0034
+2025-02-21 13:59:20,035 - INFO - Época 180/200, Pérdida: 0.0034
+2025-02-21 13:59:20,064 - INFO - Época 200/200, Pérdida: 0.0034
+2025-02-21 13:59:20,064 - INFO - Pérdida en el conjunto de prueba: 0.0063
+2025-02-21 13:59:20,065 - INFO - Ejecutando la RNN - Iteración 13
+2025-02-21 13:59:20,067 - INFO - Cantidad de datos a entrenar: torch.Size([427, 10, 1])
+2025-02-21 13:59:20,067 - INFO - Cantidad de datos a testear: torch.Size([183, 10, 1])
+2025-02-21 13:59:20,095 - INFO - Época 20/200, Pérdida: 0.0219
+2025-02-21 13:59:20,121 - INFO - Época 40/200, Pérdida: 0.0072
+2025-02-21 13:59:20,155 - INFO - Época 60/200, Pérdida: 0.0045
+2025-02-21 13:59:20,187 - INFO - Época 80/200, Pérdida: 0.0042
+2025-02-21 13:59:20,213 - INFO - Época 100/200, Pérdida: 0.0039
+2025-02-21 13:59:20,241 - INFO - Época 120/200, Pérdida: 0.0038
+2025-02-21 13:59:20,268 - INFO - Época 140/200, Pérdida: 0.0037
+2025-02-21 13:59:20,295 - INFO - Época 160/200, Pérdida: 0.0037
+2025-02-21 13:59:20,321 - INFO - Época 180/200, Pérdida: 0.0036
+2025-02-21 13:59:20,348 - INFO - Época 200/200, Pérdida: 0.0036
+2025-02-21 13:59:20,349 - INFO - Pérdida en el conjunto de prueba: 0.0061
+2025-02-21 13:59:20,349 - INFO - Ejecutando la RNN - Iteración 14
+2025-02-21 13:59:20,353 - INFO - Cantidad de datos a entrenar: torch.Size([427, 10, 1])
+2025-02-21 13:59:20,353 - INFO - Cantidad de datos a testear: torch.Size([183, 10, 1])
+2025-02-21 13:59:20,380 - INFO - Época 20/200, Pérdida: 0.0044
+2025-02-21 13:59:20,407 - INFO - Época 40/200, Pérdida: 0.0039
+2025-02-21 13:59:20,433 - INFO - Época 60/200, Pérdida: 0.0036
+2025-02-21 13:59:20,460 - INFO - Época 80/200, Pérdida: 0.0036
+2025-02-21 13:59:20,487 - INFO - Época 100/200, Pérdida: 0.0035
+2025-02-21 13:59:20,513 - INFO - Época 120/200, Pérdida: 0.0035
+2025-02-21 13:59:20,540 - INFO - Época 140/200, Pérdida: 0.0035
+2025-02-21 13:59:20,570 - INFO - Época 160/200, Pérdida: 0.0035
+2025-02-21 13:59:20,598 - INFO - Época 180/200, Pérdida: 0.0034
+2025-02-21 13:59:20,624 - INFO - Época 200/200, Pérdida: 0.0034
+2025-02-21 13:59:20,625 - INFO - Pérdida en el conjunto de prueba: 0.0063
+2025-02-21 13:59:20,625 - INFO - Ejecutando la RNN - Iteración 15
+2025-02-21 13:59:20,628 - INFO - Cantidad de datos a entrenar: torch.Size([427, 10, 1])
+2025-02-21 13:59:20,628 - INFO - Cantidad de datos a testear: torch.Size([183, 10, 1])
+2025-02-21 13:59:20,655 - INFO - Época 20/200, Pérdida: 0.0067
+2025-02-21 13:59:20,682 - INFO - Época 40/200, Pérdida: 0.0045
+2025-02-21 13:59:20,708 - INFO - Época 60/200, Pérdida: 0.0040
+2025-02-21 13:59:20,735 - INFO - Época 80/200, Pérdida: 0.0038
+2025-02-21 13:59:20,761 - INFO - Época 100/200, Pérdida: 0.0037
+2025-02-21 13:59:20,789 - INFO - Época 120/200, Pérdida: 0.0036
+2025-02-21 13:59:20,816 - INFO - Época 140/200, Pérdida: 0.0036
+2025-02-21 13:59:20,843 - INFO - Época 160/200, Pérdida: 0.0036
+2025-02-21 13:59:20,871 - INFO - Época 180/200, Pérdida: 0.0036
+2025-02-21 13:59:20,898 - INFO - Época 200/200, Pérdida: 0.0035
+2025-02-21 13:59:20,898 - INFO - Pérdida en el conjunto de prueba: 0.0061
+2025-02-21 13:59:20,899 - INFO - Ejecutando la RNN - Iteración 16
+2025-02-21 13:59:20,901 - INFO - Cantidad de datos a entrenar: torch.Size([427, 10, 1])
+2025-02-21 13:59:20,901 - INFO - Cantidad de datos a testear: torch.Size([183, 10, 1])
+2025-02-21 13:59:20,928 - INFO - Época 20/200, Pérdida: 0.0059
+2025-02-21 13:59:20,955 - INFO - Época 40/200, Pérdida: 0.0041
+2025-02-21 13:59:20,981 - INFO - Época 60/200, Pérdida: 0.0038
+2025-02-21 13:59:21,008 - INFO - Época 80/200, Pérdida: 0.0037
+2025-02-21 13:59:21,035 - INFO - Época 100/200, Pérdida: 0.0036
+2025-02-21 13:59:21,061 - INFO - Época 120/200, Pérdida: 0.0036
+2025-02-21 13:59:21,090 - INFO - Época 140/200, Pérdida: 0.0036
+2025-02-21 13:59:21,117 - INFO - Época 160/200, Pérdida: 0.0036
+2025-02-21 13:59:21,143 - INFO - Época 180/200, Pérdida: 0.0036
+2025-02-21 13:59:21,171 - INFO - Época 200/200, Pérdida: 0.0035
+2025-02-21 13:59:21,171 - INFO - Pérdida en el conjunto de prueba: 0.0060
+2025-02-21 13:59:21,172 - INFO - Ejecutando la RNN - Iteración 17
+2025-02-21 13:59:21,174 - INFO - Cantidad de datos a entrenar: torch.Size([427, 10, 1])
+2025-02-21 13:59:21,175 - INFO - Cantidad de datos a testear: torch.Size([183, 10, 1])
+2025-02-21 13:59:21,202 - INFO - Época 20/200, Pérdida: 0.0213
+2025-02-21 13:59:21,228 - INFO - Época 40/200, Pérdida: 0.0091
+2025-02-21 13:59:21,255 - INFO - Época 60/200, Pérdida: 0.0049
+2025-02-21 13:59:21,281 - INFO - Época 80/200, Pérdida: 0.0044
+2025-02-21 13:59:21,308 - INFO - Época 100/200, Pérdida: 0.0042
+2025-02-21 13:59:21,334 - INFO - Época 120/200, Pérdida: 0.0040
+2025-02-21 13:59:21,363 - INFO - Época 140/200, Pérdida: 0.0038
+2025-02-21 13:59:21,390 - INFO - Época 160/200, Pérdida: 0.0037
+2025-02-21 13:59:21,417 - INFO - Época 180/200, Pérdida: 0.0037
+2025-02-21 13:59:21,443 - INFO - Época 200/200, Pérdida: 0.0036
+2025-02-21 13:59:21,443 - INFO - Pérdida en el conjunto de prueba: 0.0062
+2025-02-21 13:59:21,444 - INFO - Ejecutando la RNN - Iteración 18
+2025-02-21 13:59:21,446 - INFO - Cantidad de datos a entrenar: torch.Size([427, 10, 1])
+2025-02-21 13:59:21,447 - INFO - Cantidad de datos a testear: torch.Size([183, 10, 1])
+2025-02-21 13:59:21,474 - INFO - Época 20/200, Pérdida: 0.0058
+2025-02-21 13:59:21,500 - INFO - Época 40/200, Pérdida: 0.0045
+2025-02-21 13:59:21,527 - INFO - Época 60/200, Pérdida: 0.0039
+2025-02-21 13:59:21,553 - INFO - Época 80/200, Pérdida: 0.0037
+2025-02-21 13:59:21,580 - INFO - Época 100/200, Pérdida: 0.0036
+2025-02-21 13:59:21,609 - INFO - Época 120/200, Pérdida: 0.0036
+2025-02-21 13:59:21,635 - INFO - Época 140/200, Pérdida: 0.0036
+2025-02-21 13:59:21,662 - INFO - Época 160/200, Pérdida: 0.0036
+2025-02-21 13:59:21,688 - INFO - Época 180/200, Pérdida: 0.0036
+2025-02-21 13:59:21,714 - INFO - Época 200/200, Pérdida: 0.0035
+2025-02-21 13:59:21,715 - INFO - Pérdida en el conjunto de prueba: 0.0060
+2025-02-21 13:59:21,715 - INFO - Ejecutando la RNN - Iteración 19
+2025-02-21 13:59:21,718 - INFO - Cantidad de datos a entrenar: torch.Size([427, 10, 1])
+2025-02-21 13:59:21,718 - INFO - Cantidad de datos a testear: torch.Size([183, 10, 1])
+2025-02-21 13:59:21,745 - INFO - Época 20/200, Pérdida: 0.0074
+2025-02-21 13:59:21,771 - INFO - Época 40/200, Pérdida: 0.0042
+2025-02-21 13:59:21,799 - INFO - Época 60/200, Pérdida: 0.0037
+2025-02-21 13:59:21,825 - INFO - Época 80/200, Pérdida: 0.0036
+2025-02-21 13:59:21,853 - INFO - Época 100/200, Pérdida: 0.0035
+2025-02-21 13:59:21,880 - INFO - Época 120/200, Pérdida: 0.0035
+2025-02-21 13:59:21,907 - INFO - Época 140/200, Pérdida: 0.0035
+2025-02-21 13:59:21,934 - INFO - Época 160/200, Pérdida: 0.0034
+2025-02-21 13:59:21,960 - INFO - Época 180/200, Pérdida: 0.0034
+2025-02-21 13:59:21,988 - INFO - Época 200/200, Pérdida: 0.0034
+2025-02-21 13:59:21,988 - INFO - Pérdida en el conjunto de prueba: 0.0064
+2025-02-21 13:59:21,989 - INFO - Ejecutando la RNN - Iteración 20
+2025-02-21 13:59:21,992 - INFO - Cantidad de datos a entrenar: torch.Size([427, 10, 1])
+2025-02-21 13:59:21,992 - INFO - Cantidad de datos a testear: torch.Size([183, 10, 1])
+2025-02-21 13:59:22,019 - INFO - Época 20/200, Pérdida: 0.0067
+2025-02-21 13:59:22,045 - INFO - Época 40/200, Pérdida: 0.0046
+2025-02-21 13:59:22,072 - INFO - Época 60/200, Pérdida: 0.0040
+2025-02-21 13:59:22,098 - INFO - Época 80/200, Pérdida: 0.0038
+2025-02-21 13:59:22,127 - INFO - Época 100/200, Pérdida: 0.0037
+2025-02-21 13:59:22,154 - INFO - Época 120/200, Pérdida: 0.0036
+2025-02-21 13:59:22,181 - INFO - Época 140/200, Pérdida: 0.0036
+2025-02-21 13:59:22,207 - INFO - Época 160/200, Pérdida: 0.0036
+2025-02-21 13:59:22,234 - INFO - Época 180/200, Pérdida: 0.0036
+2025-02-21 13:59:22,264 - INFO - Época 200/200, Pérdida: 0.0035
+2025-02-21 13:59:22,264 - INFO - Pérdida en el conjunto de prueba: 0.0060
+2025-02-21 13:59:22,265 - INFO - Ejecutando la RNN - Iteración 21
+2025-02-21 13:59:22,267 - INFO - Cantidad de datos a entrenar: torch.Size([427, 10, 1])
+2025-02-21 13:59:22,267 - INFO - Cantidad de datos a testear: torch.Size([183, 10, 1])
+2025-02-21 13:59:22,295 - INFO - Época 20/200, Pérdida: 0.0200
+2025-02-21 13:59:22,322 - INFO - Época 40/200, Pérdida: 0.0050
+2025-02-21 13:59:22,348 - INFO - Época 60/200, Pérdida: 0.0041
+2025-02-21 13:59:22,377 - INFO - Época 80/200, Pérdida: 0.0038
+2025-02-21 13:59:22,403 - INFO - Época 100/200, Pérdida: 0.0036
+2025-02-21 13:59:22,430 - INFO - Época 120/200, Pérdida: 0.0036
+2025-02-21 13:59:22,456 - INFO - Época 140/200, Pérdida: 0.0035
+2025-02-21 13:59:22,483 - INFO - Época 160/200, Pérdida: 0.0035
+2025-02-21 13:59:22,509 - INFO - Época 180/200, Pérdida: 0.0035
+2025-02-21 13:59:22,536 - INFO - Época 200/200, Pérdida: 0.0035
+2025-02-21 13:59:22,536 - INFO - Pérdida en el conjunto de prueba: 0.0064
+2025-02-21 13:59:22,537 - INFO - Ejecutando la RNN - Iteración 22
+2025-02-21 13:59:22,539 - INFO - Cantidad de datos a entrenar: torch.Size([427, 10, 1])
+2025-02-21 13:59:22,540 - INFO - Cantidad de datos a testear: torch.Size([183, 10, 1])
+2025-02-21 13:59:22,567 - INFO - Época 20/200, Pérdida: 0.0068
+2025-02-21 13:59:22,595 - INFO - Época 40/200, Pérdida: 0.0043
+2025-02-21 13:59:22,621 - INFO - Época 60/200, Pérdida: 0.0038
+2025-02-21 13:59:22,651 - INFO - Época 80/200, Pérdida: 0.0037
+2025-02-21 13:59:22,678 - INFO - Época 100/200, Pérdida: 0.0036
+2025-02-21 13:59:22,704 - INFO - Época 120/200, Pérdida: 0.0035
+2025-02-21 13:59:22,731 - INFO - Época 140/200, Pérdida: 0.0035
+2025-02-21 13:59:22,757 - INFO - Época 160/200, Pérdida: 0.0035
+2025-02-21 13:59:22,784 - INFO - Época 180/200, Pérdida: 0.0035
+2025-02-21 13:59:22,811 - INFO - Época 200/200, Pérdida: 0.0035
+2025-02-21 13:59:22,811 - INFO - Pérdida en el conjunto de prueba: 0.0062
+2025-02-21 13:59:22,811 - INFO - Ejecutando la RNN - Iteración 23
+2025-02-21 13:59:22,814 - INFO - Cantidad de datos a entrenar: torch.Size([427, 10, 1])
+2025-02-21 13:59:22,814 - INFO - Cantidad de datos a testear: torch.Size([183, 10, 1])
+2025-02-21 13:59:22,842 - INFO - Época 20/200, Pérdida: 0.0176
+2025-02-21 13:59:22,871 - INFO - Época 40/200, Pérdida: 0.0075
+2025-02-21 13:59:22,898 - INFO - Época 60/200, Pérdida: 0.0040
+2025-02-21 13:59:22,924 - INFO - Época 80/200, Pérdida: 0.0038
+2025-02-21 13:59:22,951 - INFO - Época 100/200, Pérdida: 0.0038
+2025-02-21 13:59:22,977 - INFO - Época 120/200, Pérdida: 0.0037
+2025-02-21 13:59:23,004 - INFO - Época 140/200, Pérdida: 0.0037
+2025-02-21 13:59:23,030 - INFO - Época 160/200, Pérdida: 0.0036
+2025-02-21 13:59:23,056 - INFO - Época 180/200, Pérdida: 0.0036
+2025-02-21 13:59:23,083 - INFO - Época 200/200, Pérdida: 0.0036
+2025-02-21 13:59:23,084 - INFO - Pérdida en el conjunto de prueba: 0.0062
+2025-02-21 13:59:23,084 - INFO - Ejecutando la RNN - Iteración 24
+2025-02-21 13:59:23,087 - INFO - Cantidad de datos a entrenar: torch.Size([427, 10, 1])
+2025-02-21 13:59:23,087 - INFO - Cantidad de datos a testear: torch.Size([183, 10, 1])
+2025-02-21 13:59:23,115 - INFO - Época 20/200, Pérdida: 0.0119
+2025-02-21 13:59:23,142 - INFO - Época 40/200, Pérdida: 0.0050
+2025-02-21 13:59:23,171 - INFO - Época 60/200, Pérdida: 0.0041
+2025-02-21 13:59:23,197 - INFO - Época 80/200, Pérdida: 0.0038
+2025-02-21 13:59:23,224 - INFO - Época 100/200, Pérdida: 0.0037
+2025-02-21 13:59:23,251 - INFO - Época 120/200, Pérdida: 0.0037
+2025-02-21 13:59:23,277 - INFO - Época 140/200, Pérdida: 0.0036
+2025-02-21 13:59:23,304 - INFO - Época 160/200, Pérdida: 0.0036
+2025-02-21 13:59:23,331 - INFO - Época 180/200, Pérdida: 0.0036
+2025-02-21 13:59:23,359 - INFO - Época 200/200, Pérdida: 0.0036
+2025-02-21 13:59:23,359 - INFO - Pérdida en el conjunto de prueba: 0.0061
+2025-02-21 13:59:23,360 - INFO - Ejecutando la RNN - Iteración 25
+2025-02-21 13:59:23,363 - INFO - Cantidad de datos a entrenar: torch.Size([427, 10, 1])
+2025-02-21 13:59:23,363 - INFO - Cantidad de datos a testear: torch.Size([183, 10, 1])
+2025-02-21 13:59:23,390 - INFO - Época 20/200, Pérdida: 0.0151
+2025-02-21 13:59:23,417 - INFO - Época 40/200, Pérdida: 0.0062
+2025-02-21 13:59:23,444 - INFO - Época 60/200, Pérdida: 0.0047
+2025-02-21 13:59:23,471 - INFO - Época 80/200, Pérdida: 0.0042
+2025-02-21 13:59:23,497 - INFO - Época 100/200, Pérdida: 0.0039
+2025-02-21 13:59:23,524 - INFO - Época 120/200, Pérdida: 0.0037
+2025-02-21 13:59:23,550 - INFO - Época 140/200, Pérdida: 0.0036
+2025-02-21 13:59:23,577 - INFO - Época 160/200, Pérdida: 0.0036
+2025-02-21 13:59:23,604 - INFO - Época 180/200, Pérdida: 0.0035
+2025-02-21 13:59:23,630 - INFO - Época 200/200, Pérdida: 0.0035
+2025-02-21 13:59:23,631 - INFO - Pérdida en el conjunto de prueba: 0.0064
+2025-02-21 13:59:23,631 - INFO - Ejecutando la RNN - Iteración 26
+2025-02-21 13:59:23,634 - INFO - Cantidad de datos a entrenar: torch.Size([427, 10, 1])
+2025-02-21 13:59:23,634 - INFO - Cantidad de datos a testear: torch.Size([183, 10, 1])
+2025-02-21 13:59:23,662 - INFO - Época 20/200, Pérdida: 0.0137
+2025-02-21 13:59:23,691 - INFO - Época 40/200, Pérdida: 0.0045
+2025-02-21 13:59:23,718 - INFO - Época 60/200, Pérdida: 0.0040
+2025-02-21 13:59:23,745 - INFO - Época 80/200, Pérdida: 0.0038
+2025-02-21 13:59:23,771 - INFO - Época 100/200, Pérdida: 0.0037
+2025-02-21 13:59:23,798 - INFO - Época 120/200, Pérdida: 0.0036
+2025-02-21 13:59:23,824 - INFO - Época 140/200, Pérdida: 0.0036
+2025-02-21 13:59:23,853 - INFO - Época 160/200, Pérdida: 0.0036
+2025-02-21 13:59:23,880 - INFO - Época 180/200, Pérdida: 0.0036
+2025-02-21 13:59:23,906 - INFO - Época 200/200, Pérdida: 0.0035
+2025-02-21 13:59:23,907 - INFO - Pérdida en el conjunto de prueba: 0.0060
+2025-02-21 13:59:23,907 - INFO - Ejecutando la RNN - Iteración 27
+2025-02-21 13:59:23,910 - INFO - Cantidad de datos a entrenar: torch.Size([427, 10, 1])
+2025-02-21 13:59:23,910 - INFO - Cantidad de datos a testear: torch.Size([183, 10, 1])
+2025-02-21 13:59:23,938 - INFO - Época 20/200, Pérdida: 0.0064
+2025-02-21 13:59:23,965 - INFO - Época 40/200, Pérdida: 0.0044
+2025-02-21 13:59:23,991 - INFO - Época 60/200, Pérdida: 0.0039
+2025-02-21 13:59:24,018 - INFO - Época 80/200, Pérdida: 0.0037
+2025-02-21 13:59:24,044 - INFO - Época 100/200, Pérdida: 0.0036
+2025-02-21 13:59:24,071 - INFO - Época 120/200, Pérdida: 0.0036
+2025-02-21 13:59:24,098 - INFO - Época 140/200, Pérdida: 0.0036
+2025-02-21 13:59:24,124 - INFO - Época 160/200, Pérdida: 0.0035
+2025-02-21 13:59:24,151 - INFO - Época 180/200, Pérdida: 0.0035
+2025-02-21 13:59:24,177 - INFO - Época 200/200, Pérdida: 0.0035
+2025-02-21 13:59:24,178 - INFO - Pérdida en el conjunto de prueba: 0.0061
+2025-02-21 13:59:24,178 - INFO - Ejecutando la RNN - Iteración 28
+2025-02-21 13:59:24,181 - INFO - Cantidad de datos a entrenar: torch.Size([427, 10, 1])
+2025-02-21 13:59:24,181 - INFO - Cantidad de datos a testear: torch.Size([183, 10, 1])
+2025-02-21 13:59:24,211 - INFO - Época 20/200, Pérdida: 0.0184
+2025-02-21 13:59:24,238 - INFO - Época 40/200, Pérdida: 0.0098
+2025-02-21 13:59:24,265 - INFO - Época 60/200, Pérdida: 0.0047
+2025-02-21 13:59:24,292 - INFO - Época 80/200, Pérdida: 0.0042
+2025-02-21 13:59:24,318 - INFO - Época 100/200, Pérdida: 0.0040
+2025-02-21 13:59:24,345 - INFO - Época 120/200, Pérdida: 0.0038
+2025-02-21 13:59:24,373 - INFO - Época 140/200, Pérdida: 0.0037
+2025-02-21 13:59:24,400 - INFO - Época 160/200, Pérdida: 0.0037
+2025-02-21 13:59:24,426 - INFO - Época 180/200, Pérdida: 0.0036
+2025-02-21 13:59:24,453 - INFO - Época 200/200, Pérdida: 0.0036
+2025-02-21 13:59:24,455 - INFO - Pérdida en el conjunto de prueba: 0.0061
+2025-02-21 13:59:24,455 - INFO - Ejecutando la RNN - Iteración 29
+2025-02-21 13:59:24,458 - INFO - Cantidad de datos a entrenar: torch.Size([427, 10, 1])
+2025-02-21 13:59:24,458 - INFO - Cantidad de datos a testear: torch.Size([183, 10, 1])
+2025-02-21 13:59:24,485 - INFO - Época 20/200, Pérdida: 0.0197
+2025-02-21 13:59:24,512 - INFO - Época 40/200, Pérdida: 0.0057
+2025-02-21 13:59:24,539 - INFO - Época 60/200, Pérdida: 0.0044
+2025-02-21 13:59:24,565 - INFO - Época 80/200, Pérdida: 0.0040
+2025-02-21 13:59:24,592 - INFO - Época 100/200, Pérdida: 0.0038
+2025-02-21 13:59:24,618 - INFO - Época 120/200, Pérdida: 0.0037
+2025-02-21 13:59:24,645 - INFO - Época 140/200, Pérdida: 0.0037
+2025-02-21 13:59:24,673 - INFO - Época 160/200, Pérdida: 0.0036
+2025-02-21 13:59:24,699 - INFO - Época 180/200, Pérdida: 0.0036
+2025-02-21 13:59:24,728 - INFO - Época 200/200, Pérdida: 0.0036
+2025-02-21 13:59:24,729 - INFO - Pérdida en el conjunto de prueba: 0.0061
+2025-02-21 13:59:24,729 - INFO - Ejecutando la RNN - Iteración 30
+2025-02-21 13:59:24,732 - INFO - Cantidad de datos a entrenar: torch.Size([427, 10, 1])
+2025-02-21 13:59:24,732 - INFO - Cantidad de datos a testear: torch.Size([183, 10, 1])
+2025-02-21 13:59:24,760 - INFO - Época 20/200, Pérdida: 0.0107
+2025-02-21 13:59:24,787 - INFO - Época 40/200, Pérdida: 0.0053
+2025-02-21 13:59:24,815 - INFO - Época 60/200, Pérdida: 0.0042
+2025-02-21 13:59:24,842 - INFO - Época 80/200, Pérdida: 0.0039
+2025-02-21 13:59:24,870 - INFO - Época 100/200, Pérdida: 0.0038
+2025-02-21 13:59:24,896 - INFO - Época 120/200, Pérdida: 0.0037
+2025-02-21 13:59:24,923 - INFO - Época 140/200, Pérdida: 0.0036
+2025-02-21 13:59:24,950 - INFO - Época 160/200, Pérdida: 0.0036
+2025-02-21 13:59:24,977 - INFO - Época 180/200, Pérdida: 0.0036
+2025-02-21 13:59:25,004 - INFO - Época 200/200, Pérdida: 0.0036
+2025-02-21 13:59:25,005 - INFO - Pérdida en el conjunto de prueba: 0.0062
+2025-02-21 13:59:25,006 - INFO - T-statistic: 2.138182
+2025-02-21 13:59:25,006 - INFO - P-value: 0.041369
+2025-02-21 13:59:25,006 - INFO - Los resultados de la RNN varían significativamente entre ejecuciones (p < 0.05).
