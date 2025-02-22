@@ -71,7 +71,12 @@ def RNN(df, timesteps, target_column, test_size=0.3, random_state=42, rnn_input_
     
     X, Y = create_sequences(data, timesteps)
     
-    X_train, X_test, y_train, y_test = train_test_split(X, Y, test_size=test_size, random_state=random_state)
+    # X_train, X_test, y_train, y_test = train_test_split(X, Y, test_size=test_size, random_state=random_state)
+    split_idx = int(len(X) * (1 - test_size))
+    X_train, X_test = X[:split_idx], X[split_idx:]
+    y_train, y_test = Y[:split_idx], Y[split_idx:]
+    
+    test_dates = df.index[timesteps + split_idx +1 : timesteps + split_idx + len(X_test)]
     
     X_train = torch.tensor(X_train, dtype=torch.float32).unsqueeze(-1)
     X_test = torch.tensor(X_test, dtype=torch.float32).unsqueeze(-1)
@@ -100,7 +105,7 @@ def RNN(df, timesteps, target_column, test_size=0.3, random_state=42, rnn_input_
             LOG.info(f"Época {epoch + 1}/{epochs}, Pérdida: {loss.item():.4f}")
             
 
-    torch.save(model.state_dict(), './data/results/model_weights.pth')
+    # torch.save(model.state_dict(), './data/results/model_weights.pth')
     
     model.eval()
     
@@ -112,14 +117,21 @@ def RNN(df, timesteps, target_column, test_size=0.3, random_state=42, rnn_input_
     y_test_inv = scaler.inverse_transform(y_test.numpy().reshape(-1, 1))
     y_pred_inv = scaler.inverse_transform(y_pred.numpy().reshape(-1, 1))
     
-    return y_test_inv, y_pred_inv
+    y_test_inv = y_test_inv[:-1]
+    y_pred_inv = y_pred_inv[1:]
     
-def plot_results(y_test_inv, y_pred_inv):
-    plt.figure(figsize=(10, 6))
-    plt.plot(y_test_inv, label="Real", marker='o')
-    plt.plot(y_pred_inv, label="Predicción", marker='x')
+    return y_test_inv, y_pred_inv, test_dates
+    
+def plot_results(y_test_inv, y_pred_inv, test_dates):
+    plt.figure(figsize=(12, 6))
+    plt.plot(test_dates, y_test_inv, label="Real", marker='o', linestyle='-')
+    plt.plot(test_dates, y_pred_inv, label="Predicción", marker='x', linestyle='--')
+    plt.xlabel("Fecha")
+    plt.ylabel("Valor")
+    plt.xticks(rotation=45)
     plt.legend()
-    plt.title("Predicción vs Real")
+    plt.title("Comparación: Valores Reales vs Predicciones")
+    plt.tight_layout()
     plt.show()
     
 def metrics(y_test_inv, y_pred_inv):
@@ -134,9 +146,7 @@ def metrics(y_test_inv, y_pred_inv):
     return mse, rmse, r2
 
 
-def main():
-    path = os.path.abspath(os.path.join(os.path.dirname(__file__),"../../data/Anexos_7/full/total_incomes_augmented_full_data.csv"))
-    df = pd.read_csv(path)
+def execute(df, target, show_plot=False, show_metrics=False):
 
     df['Date'] = pd.to_datetime(df['Date'])
 
@@ -144,12 +154,21 @@ def main():
 
     df.set_index('Date', inplace=True)
     
-    y_test_inv, y_pred_inv = RNN(df, timesteps=10, target_column='Pinar del Rio')
-    
-    plot_results(y_test_inv, y_pred_inv)
-    
-    metrics(y_test_inv, y_pred_inv)
-    
+    y_test_inv, y_pred_inv, test_dates = RNN(df, timesteps=10, target_column=target)
 
+    if show_plot:
+        plot_results(y_test_inv, y_pred_inv, test_dates)
+    
+    if show_metrics:
+        metrics(y_test_inv, y_pred_inv)
+    
+    return y_test_inv, y_pred_inv, test_dates
+    
 if __name__ == "__main__":
-    main()
+    path = os.path.abspath(os.path.join(os.path.dirname(__file__),"../../data/Anexos_7/full/total_incomes_augmented_full_data.csv"))
+    df = pd.read_csv(path)
+        
+    y_test_inv, y_pred_inv, test_dates = execute(df=df, target='Pinar del Rio', show_plot=True, show_metrics=True)
+    
+    # for target in df.columns[1:17]:
+    #     print(f"Predicting for {target}")
