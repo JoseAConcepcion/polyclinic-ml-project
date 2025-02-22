@@ -10,6 +10,7 @@ import logging as LOG
 import torch.optim as optim
 import torch.nn as nn
 import matplotlib.pyplot as plt
+from scipy.stats import ttest_rel
 
 LOG.basicConfig(
     level=LOG.INFO,  
@@ -47,7 +48,7 @@ def create_sequences(data, timesteps):
     return np.array(X), np.array(y)
     
   
-def RNN(df, timesteps, target_column, test_size=0.3, random_state=42, rnn_input_size=1, rnn_hidden_size=16, rnn_output_size=1, epochs=200):
+def RNN(df, timesteps, target_column, test_size=0.3, random_state=42, rnn_input_size=1, rnn_hidden_size=16, rnn_output_size=1, epochs=200, logs=False):
     """ 
     Args:
         - df: DataFrame con los datos
@@ -83,8 +84,9 @@ def RNN(df, timesteps, target_column, test_size=0.3, random_state=42, rnn_input_
     y_train = torch.tensor(y_train, dtype=torch.float32)
     y_test = torch.tensor(y_test, dtype=torch.float32)
     
-    LOG.info("Cantidad de datos a entrenar: %s", X_train.shape)
-    LOG.info("Cantidad de datos a testear: %s", X_test.shape)
+    if logs:
+        LOG.info("Cantidad de datos a entrenar: %s", X_train.shape)
+        LOG.info("Cantidad de datos a testear: %s", X_test.shape)
     
     model = SimpleRNN(rnn_input_size, rnn_hidden_size, rnn_output_size)
     
@@ -101,7 +103,7 @@ def RNN(df, timesteps, target_column, test_size=0.3, random_state=42, rnn_input_
         loss.backward()
         optimizer.step()
         
-        if (epoch + 1) % 20 == 0:
+        if (epoch + 1) % 20 == 0 and logs:
             LOG.info(f"Época {epoch + 1}/{epochs}, Pérdida: {loss.item():.4f}")
             
 
@@ -112,7 +114,8 @@ def RNN(df, timesteps, target_column, test_size=0.3, random_state=42, rnn_input_
     with torch.no_grad():
         y_pred = model(X_test).squeeze()
         test_loss = criterion(y_pred, y_test)
-        LOG.info(f"Pérdida en el conjunto de prueba: {test_loss.item():.4f}")
+        if logs:
+            LOG.info(f"Pérdida en el conjunto de prueba: {test_loss.item():.4f}")
         
     y_test_inv = scaler.inverse_transform(y_test.numpy().reshape(-1, 1))
     y_pred_inv = scaler.inverse_transform(y_pred.numpy().reshape(-1, 1))
@@ -120,7 +123,7 @@ def RNN(df, timesteps, target_column, test_size=0.3, random_state=42, rnn_input_
     y_test_inv = y_test_inv[:-1]
     y_pred_inv = y_pred_inv[1:]
     
-    return y_test_inv, y_pred_inv, test_dates
+    return y_test_inv, y_pred_inv, test_dates, test_loss.item()
     
 def plot_results(y_test_inv, y_pred_inv, test_dates):
     plt.figure(figsize=(12, 6))
@@ -146,7 +149,7 @@ def metrics(y_test_inv, y_pred_inv):
     return mse, rmse, r2
 
 
-def execute(df, target, show_plot=False, show_metrics=False):
+def execute(df, target, show_plot=False, show_metrics=False, show_statistics=False, num_runs=30):
 
     df['Date'] = pd.to_datetime(df['Date'])
 
@@ -154,21 +157,47 @@ def execute(df, target, show_plot=False, show_metrics=False):
 
     df.set_index('Date', inplace=True)
     
-    y_test_inv, y_pred_inv, test_dates = RNN(df, timesteps=10, target_column=target)
+    y_test_inv, y_pred_inv, test_dates, test_loss = RNN(df, timesteps=10, target_column=target, logs=not show_statistics)
 
     if show_plot:
         plot_results(y_test_inv, y_pred_inv, test_dates)
     
     if show_metrics:
         metrics(y_test_inv, y_pred_inv)
+        
+    if show_statistics:
+        errors = []
+        
+        for i in range(num_runs):
+            LOG.info(f"Ejecutando la RNN - Iteración {i + 1}")
+            _, _, _, mse = RNN(df, timesteps=10, target_column=target)
+            errors.append(mse)
+        
+        statistics(errors, num_runs)
     
-    return y_test_inv, y_pred_inv, test_dates
+    return y_test_inv, y_pred_inv, test_dates, test_loss
+
+def statistics(errors, num_runs):
+    
+    base_error = errors[0]  # Compare with first iteration
+    t_stat, p_value = ttest_rel(errors[1:], [base_error] * (num_runs - 1))
+
+    LOG.info(f"T-statistic: {t_stat:.6f}")
+    LOG.info(f"P-value: {p_value:.6f}")
+
+    if p_value < 0.05:
+        LOG.info("Los resultados de la RNN varían significativamente entre ejecuciones (p < 0.05).")
+    else:
+        LOG.info("No hay suficiente evidencia para decir que los resultados de la RNN cambian significativamente.")
+
+    return t_stat, p_value
     
 if __name__ == "__main__":
     path = os.path.abspath(os.path.join(os.path.dirname(__file__),"../../data/Anexos_7/full/total_incomes_augmented_full_data.csv"))
     df = pd.read_csv(path)
         
-    y_test_inv, y_pred_inv, test_dates = execute(df=df, target='Pinar del Rio', show_plot=True, show_metrics=True)
+    y_test_inv, y_pred_inv, test_dates, _ = execute(df=df, target='Pinar del Rio', show_plot=False, show_metrics=False, show_statistics=True, num_runs=30)
     
+        
     # for target in df.columns[1:17]:
     #     print(f"Predicting for {target}")
