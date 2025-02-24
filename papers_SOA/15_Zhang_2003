@@ -1,0 +1,32 @@
+### Zhang (2003)
+
+**Título del Paper:**
+"Time series forecasting using a hybrid ARIMA and neural network model" por Guangdong Zhang, publicado en 2003.
+
+#### Resumen del Enfoque
+El paper de Zhang introduce un modelo híbrido que combina las técnicas de AutoRegressive Integrated Moving Average (ARIMA), un enfoque estadístico clásico, con redes neuronales (NN), que son capaces de capturar relaciones no lineales complejas. Este enfoque se desarrolla con el objetivo de mejorar la precisión de las predicciones de series temporales sobre lo que podría lograrse con modelos puramente lineales o no lineales.
+
+#### Motivación
+Las series temporales en muchos campos prácticos presentan comportamientos tanto lineales como no lineales. Los modelos ARIMA son ampliamente reconocidos por su eficacia en modelar la linealidad en series temporales, pero a menudo fallan al tratar con dinámicas no lineales. Las redes neuronales, por otro lado, tienen una capacidad notable para modelar complejidades no lineales pero pueden no ser tan efectivas en capturar relaciones lineales simples y pueden requerir grandes cantidades de datos para entrenar eficazmente.
+
+#### Descripción del Modelo Híbrido
+El modelo propuesto en el paper opera en dos fases principales:
+
+1. **Modelado ARIMA:**
+   - Se ajusta un modelo ARIMA a la serie temporal para capturar las dinámicas lineales. Esto incluye identificar y estimar los parámetros p, d, y q que mejor se ajusten a la serie.
+   - Se calculan los residuos como la diferencia entre los valores reales y los valores predichos por el modelo ARIMA. Estos residuos representan la información que el modelo ARIMA no pudo capturar, presumiblemente debido a la no linealidad en los datos.
+
+2. **Modelado de Residuos con Red Neuronal:**
+   - Se utiliza una red neuronal para modelar los residuos del modelo ARIMA. El propósito es aprender y predecir la estructura no lineal residual que el modelo ARIMA no captura.
+   - La red utilizada en el estudio es una red neuronal de retroalimentación con una o más capas ocultas. La red se entrena utilizando los residuos como entrada y salida, aprendiendo efectivamente a predecir el error del modelo ARIMA.
+
+3. **Combinación de Predicciones:**
+   - La predicción final del modelo híbrido es la suma de las predicciones del modelo ARIMA y las predicciones de los residuos generadas por la red neuronal. Esto se hace con la expectativa de que al combinar ambos modelos, se puede capturar tanto la linealidad como la no linealidad en los datos, mejorando la precisión de la predicción global.
+
+#### Evaluación y Validación
+El modelo híbrido se evalúa comparándolo con los modelos ARIMA y NN independientes en términos de varias métricas estadísticas, incluyendo el RMSE (Root Mean Squared Error) y el MAE (Mean Absolute Error). Zhang demostró que el modelo híbrido generalmente supera a los modelos que utilizan solo una de estas técnicas, especialmente en series temporales con fuertes componentes no lineales.
+
+Además, se realiza una prueba de Diebold-Mariano para comparar los errores de predicción entre el modelo híbrido y los modelos estándar, buscando evidencia estadística de la mejora en la precisión de la predicción.
+
+#### Conclusión del Paper
+El estudio concluye que el modelo híbrido ARIMA-NN es efectivo para mejorar la precisión de las predicciones de series temporales, proporcionando un enfoque robusto y flexible que aprovecha las fortalezas tanto de los métodos estadísticos como de los métodos de aprendizaje máquina. Este modelo híbrido es particularmente útil en aplicaciones donde las series temporales exhiben tanto patrones lineales como no lineales complejos, ofreciendo una metodología mejorada para la predicción precisa en estos escenarios.
