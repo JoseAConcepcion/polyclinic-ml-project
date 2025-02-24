@@ -18,7 +18,7 @@ La idea de utilizar RNN es identificar patrones en los ingresos, como picos rela
 En la imagen se observan la cantidad de ingresos por días predecidos vs los reales, la principal dificultad se observa en la predicción de los picos de ingresos.
 ![alt text](image-1.png)
 
-Durante el entrenamiento se probaron diferentes valores del hipérparámetro `n_steps` obteniendo valores muy similares en los resultados, finalmente se seleccionó un valor de 7. (7 días anteriores para predecir el siguiente)
+Durante el entrenamiento se probaron diferentes valores del hipérparámetro `n_steps` obteniendo valores muy similares en los resultados, finalmente se seleccionó un valor de 10. (10 días anteriores para predecir el siguiente)
 Se obtuvo un Error Cuadrático Medio de 4009 y su raíz cuadrada es aproximadamente 63. Lo que
 indica que el modelo tiene un error promedio de 63 ingresos por día. Dado que los valores de los datos están entre 0 y 300 el error es considerable.
 
@@ -67,4 +67,4 @@ R2 Promedio: 0.7731
 
 ## Conclusión
 
-El modelo no parece estar sobreajustado pues las métricas obtenidas en la validación cruzada son similares a las obtenidas anteriormente. Parece indicar que el modelo "aprendió" bien las relaciones temporales en los datos.
+El modelo no parece estar sobreajustado pues las métricas obtenidas en la validación cruzada son similares a las obtenidas anteriormente. Sin embargo, ante la sospecha de que el modelo está aprendiendo muy bien los datos de entrenamiento se realizaron otras pruebas como añadir ruido a los datos y varió significativamente el MSE ante un pequeño ruido, lo que sí indica que no está generalizando bien.
