@@ -86,6 +86,12 @@ def RNN(df, timesteps, target_column, test_size=0.3, random_state=42, rnn_input_
     y_train, y_test = Y[:split_idx], Y[split_idx:]
     
     test_dates = df.index[timesteps + split_idx +1 : timesteps + split_idx + len(X_test)]
+    # X_train, X_test, y_train, y_test = train_test_split(X, Y, test_size=test_size, random_state=random_state)
+    split_idx = int(len(X) * (1 - test_size))
+    X_train, X_test = X[:split_idx], X[split_idx:]
+    y_train, y_test = Y[:split_idx], Y[split_idx:]
+    
+    test_dates = df.index[timesteps + split_idx +1 : timesteps + split_idx + len(X_test)]
     
     X_train = torch.tensor(X_train, dtype=torch.float32).unsqueeze(-1)
     X_test = torch.tensor(X_test, dtype=torch.float32).unsqueeze(-1)
